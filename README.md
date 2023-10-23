@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Layr Figma Contribution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The "Layr Figma Contribution React App" is a web application developed using React, designed to enhance the functionality and user experience related to contributions in the context of Figma design collaboration. Here's a breakdown of its key features:
 
-## Available Scripts
+### Layr Figma Contribution: 
+This suggests that the app is specifically built to work with Figma, a popular web-based design and prototyping tool. It likely integrates with Figma's APIs or services to gather data related to contributions.
 
-In the project directory, you can run:
+### React App: 
+The application is developed using React, a popular JavaScript library for building user interfaces. React is known for its performance, modularity, and the ability to create interactive web applications.
 
-### `npm start`
+### Charts like Bar Graphs: 
+The app incorporates data visualization elements, including bar graphs. Bar graphs are effective for displaying contributions data as they allow users to quickly understand the distribution and relative sizes of contributions made by different users or over time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Visualize Contributions: 
+The primary function of the app is to enable users to visualize and understand contributions within the context of Figma. This could include tracking changes made to design files, comments, updates, or any other form of user input within Figma.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Filters for Users: 
+The app provides a filtering mechanism that allows users to refine the displayed data according to different user-related criteria. This is useful for isolating specific contributions or gaining insights into the contributions of particular team members, collaborators, or groups.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Developed by:
+Neelesh Roy
+Senior Frontend Engineer, Layr
