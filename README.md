@@ -1,6 +1,6 @@
 # Layr Figma Contribution App
 
-![Layr Figma Contribution app screenshot](https://ibb.co/QnsnWpV)
+![Layr Figma Contribution app screenshot](https://i.ibb.co/GkgkZnD/Screenshot-2023-10-23-at-9-28-10-AM.png)
 
 The "Layr Figma Contribution React App" is a web application developed using React, designed to enhance the functionality and user experience related to contributions in the context of Figma design collaboration. Here's a breakdown of its key features:
 
