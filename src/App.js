@@ -7,6 +7,7 @@ import LayrLineChart from "./components/LayrLineChart";
 import Pagination from "./components/Pagination";
 import Filter from "./components/Filter";
 import IndividualContributions from "./components/IndividualContributions";
+import mock from "./mock";
 
 function App() {
   const [figmaVersions, setFigmaVersions] = useState([]);
@@ -48,17 +49,22 @@ function App() {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   useEffect(() => {
-    Promise.all([
-      apiRequests(setFigmaVersions),
-      apiRequests(
-        setFigmaVersions,
-        `https://api.figma.com/v1/files/${process.env.REACT_APP_URL_TWO}/versions`
-      ),
-      apiRequests(
-        setFigmaVersions,
-        `https://api.figma.com/v1/files/${process.env.REACT_APP_URL_THREE}/versions`
-      ),
-    ]).then(() => setLoading(false));
+    if(process.env.NODE_ENV === 'development') {
+      setFigmaVersions(mock())
+      setLoading(false)
+    } else {
+      Promise.all([
+        apiRequests(setFigmaVersions),
+        apiRequests(
+          setFigmaVersions,
+          `https://api.figma.com/v1/files/${process.env.REACT_APP_URL_TWO}/versions`
+        ),
+        apiRequests(
+          setFigmaVersions,
+          `https://api.figma.com/v1/files/${process.env.REACT_APP_URL_THREE}/versions`
+        ),
+      ]).then(() => setLoading(false));
+    }
   }, []);
 
   useEffect(() => {
@@ -85,14 +91,14 @@ function App() {
     <div className="App">
       {loading && (
         <div className="loader">
-          <div class="lds-ripple">
+          <div className="lds-ripple">
             <div></div>
             <div></div>
           </div>
         </div>
       )}
       <div>
-        <h1>Layr Figma Contributions</h1>
+      <h1 contenteditable data-heading="Layr Figma Contributions" className="entry-text">Layr Figma Contributions</h1>
         <IndividualContributions data={individualCont} users={users} />
         <LayrBarChart contributionDates={contributionDates} />
         <LayrLineChart contributionDates={contributionDates} />
