@@ -8,17 +8,12 @@ import {
   Legend,
 } from "recharts";
 
-const LayrLineChart = ({ contributionDates }) => {
+const LayrLineChart = ({ data }) => {
   return (
     <LineChart
-      width={1000}
-      height={300}
-      data={Object.keys(contributionDates).map((key) => {
-        return {
-          name: key,
-          count: contributionDates[key],
-        };
-      })}
+      width={1200}
+      height={500}
+      data={data}
       margin={{
         top: 5,
         right: 0,
@@ -31,7 +26,7 @@ const LayrLineChart = ({ contributionDates }) => {
       <YAxis />
       <Tooltip />
       <Legend />
-      <Line type="monotone" dataKey="count" stroke="#82ca9d" />
+      <Line type="monotone" dataKey="count" stroke="#8BA4FE" />
     </LineChart>
   );
 };

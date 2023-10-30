@@ -24,6 +24,10 @@ h1, h2, b {
   margin: 20px 0;
 }
 
+h2 {
+  padding: 20px 0;
+}
+
 .lds-ripple {
   display: inline-block;
   position: absolute;
@@ -90,9 +94,9 @@ h1 {
 .individual-contributions {
   width: 100%;
   margin-bottom: 40px;
-  background: #ff4b1f;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #6e87e0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #305AEE, #8BA4FE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #305AEE, #8BA4FE, ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   padding: 20px;
   border-radius: 10px;
 }
@@ -126,8 +130,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   position: relative;
-  color: #f98ca4;
-  text-shadow: -1px -1px 0 #6e1f58, 1px -1px 0 #6e1f58, -1px 1px 0 #6e1f58, 1px 1px 0 #6e1f58, 1px 0px 0px #65f283, 0px 1px 0px #65f283, 2px 1px 0px #65f283, 1px 2px 0px #65f283, 3px 2px 0px #65f283, 2px 3px 0px #65f283, 4px 3px 0px #65f283, 3px 4px 0px #65f283, 5px 4px 0px #65f283, 3px 5px 0px #6e1f58, 6px 5px 0px #6e1f58, -1px 2px 0 black, 0 3px 0 #6e1f58, 1px 4px 0 #6e1f58, 2px 5px 0px #6e1f58, 2px -1px 0 #6e1f58, 3px 0 0 #6e1f58, 4px 1px 0 #6e1f58, 5px 2px 0px #6e1f58, 6px 3px 0 #6e1f58, 7px 4px 0 #6e1f58, 10px 10px 4px #dac249;
+  color: #d4e53b;
+  text-shadow: -1px -1px 0 #1e3aa0, 1px -1px 0 #1e3aa0, -1px 1px 0 #1e3aa0, 1px 1px 0 #1e3aa0, 1px 0px 0px #3b8be5, 0px 1px 0px #3b8be5, 2px 1px 0px #3b8be5, 1px 2px 0px #3b8be5, 3px 2px 0px #3b8be5, 2px 3px 0px #3b8be5, 4px 3px 0px #3b8be5, 3px 4px 0px #3b8be5, 5px 4px 0px #3b8be5, 3px 5px 0px #1e3aa0, 6px 5px 0px #1e3aa0, -1px 2px 0 black, 0 3px 0 #1e3aa0, 1px 4px 0 #1e3aa0, 2px 5px 0px #1e3aa0, 2px -1px 0 #1e3aa0, 3px 0 0 #1e3aa0, 4px 1px 0 #1e3aa0, 5px 2px 0px #1e3aa0, 6px 3px 0 #1e3aa0, 7px 4px 0 #1e3aa0, 10px 10px 4px #dac249;
 }
 
 /*

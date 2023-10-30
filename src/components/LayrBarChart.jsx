@@ -7,35 +7,33 @@ import {
     BarChart,
     Bar,
     Rectangle,
+    Label,
   } from "recharts";
 
-const LayrBarChart = ({ contributionDates }) => {
+const LayrBarChart = ({ data }) => {
     return (
         <BarChart
-          width={1000}
-          height={300}
-          data={Object.keys(contributionDates).map((key) => {
-            return {
-              name: key,
-              count: contributionDates[key],
-            };
-          })}
+          width={1200}
+          height={400}
+          data={data}
           margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
+            top: 10,
+            right: 10,
+            left: 10,
+            bottom: 10,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <Legend/>
+          <CartesianGrid strokeDasharray="3 2" />
+          <XAxis dataKey="name" >
+            <Label value="Week number" offset={-10} position="insideBottomLeft" />
+          </XAxis>
           <YAxis />
           <Tooltip />
-          <Legend />
           <Bar
             dataKey="count"
-            fill="#8884d8"
-            activeBar={<Rectangle fill="pink" stroke="blue" />}
+            fill="#8BA4FE"
+            activeBar={<Rectangle fill="pink" stroke="#8BA4FE" />}
           />
         </BarChart>
     )
