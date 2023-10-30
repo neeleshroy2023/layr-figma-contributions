@@ -60,7 +60,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== "development") {
+    if (process.env.NODE_ENV === "development") {
       setFigmaVersions(mock());
       setLoading(false);
       setFigmaAPIDoneFlag(true);
